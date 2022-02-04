@@ -8,15 +8,22 @@
 </head>
 <body>
     <h1>Ejercicio 1</h1>
-    <script>
-        let numeroDeElementos = 
-    // 0,1 - 0,1,1 - 0,1,1,2 
-     
 
-        for (let i =  ; i < numeroDeElementos; i++);
-        {
-            console.log()
-        }
+    <script>
+      
+        let numeroDeElementos = 8;
+//0,1    0,1,1     0,1,1,2 ...  
+    let primerNumero = 1;
+    let segundoNumero = 0;
+    let suma = 0;
+
+    for( let i = 0 ; i < numeroDeElementos ; i++){
+        suma = primerNumero + segundoNumero;
+        primerNumero = segundoNumero;
+        segundoNumero = suma;
+
+        console.log(suma);
+}
 
     </script>
     
