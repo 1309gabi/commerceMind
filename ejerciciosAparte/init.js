@@ -53,4 +53,26 @@ let opcionesUsuario = prompt(`
             break;
     }
 
+/*let numeroMayorMenor = ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
+let i=0;
+let j=600;
+    while (numeroMayorMenor >= i; numeroMayorMenor <= j); */
+   /* let numeroMayorMenor = ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
+    console.log(parseInt(numeroMayorMenor));
+    let i=0
+    let j=500
+
+    while (numeroMayorMenor <= j && numeroMayorMenor> i){
+        console.log();
+    }*/
+
+
+
+
+    let numeroPrueba= 1;
+    while (numeroPrueba <=10){
+        console.log(numeroPrueba)
+        numeroPrueba++ //numeroPrueba = numeroPrueba + 1
+    }
+    console.log('Fin del ciclo '+numeroPrueba);
 
