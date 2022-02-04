@@ -9,17 +9,8 @@
 <body>
     <script>
   
-  let numeroMayorMenor = ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
-    console.log(numeroMayorMenor);
 
 //    for(let i=0; i < numeroMayorMenor.length; i++){console.log(numeroMayorMenor [i]);
-
- for (let numero of numeroMayorMenor){
-     console.log(numero);
- }
- 
-
-
 /*let numeroMayorMenor = ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
 let i=0;
 let j=600;
@@ -54,10 +45,26 @@ console.log(sumar(5, 2));
 
 
 
+class Punto{
+    constructor (x , y){
+        this.x= x;
+        this.y= y;
+    }
+}
+class Ayudantes {
+    static distancia (a, b){
+        const dx= a.x - b.x;
+        const dy= a.y - b.y;
 
+        return Math.sqrt ( x: dx * dx + dy * dy );
+    }
+}
+const p1= new Punto( x:5, y:5 );
+const p2= new Punto( x:10, y:10 );
+const p3= new Cuadros ( x:10, y;10 );
 
-
-
+console.log(Ayudantes.distancia(p1, p2)); 
+console.log(Ahyudantes.distancia(p1, p3));
 
 
     </script>
