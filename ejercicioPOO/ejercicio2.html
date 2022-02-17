@@ -17,27 +17,63 @@
         }
 
         function ordenacion (soloNumeros){
-            let arreglo= [];
-            let maximo= soloNumeros[0];
+            let contador = 0;
+            const arreglo = soloNumeros;
 
-            for (let i=0; i< soloNumeros.length; i++ ){
+        for (i = 0; i < arr2.length - 1; i++) {
+            if (arreglo[i] < arreglo[i + 1]) {
+                [arreglo[i], arreglo[i + 1]] = [arreglo[i + 1], arreglo[i]]; 
+        }
+        if (i === arreglo.length - 2) {
+            i = -1;
+            contador++;
+        }
+
+        if (contador === arreglo.length - 1) break;
+        }
+        console.log(arreglo);   
+            
+            
+            
+            /*let j=0;
+            let arreglo= soloNumeros;
+            let cambio= false;
+
+            while (j< arreglo.length -1){
+                if (arreglo[j] < arreglo[j+1]){
+                    [arreglo[j], arreglo[j+1]] = [arreglo[j+1], arreglo[j]];
+                    cambio=true;
+                }
+                if (j === arreglo.length -2){
+                    j= -1;
+                    if (cambio === false) break;
+                    cambio = false;
+                }
+                j++;
+            }
+            console.log(arreglo); }
+
+
+            /*for (let i=0; i< soloNumeros.length; i++ ){
                 arreglo.push(soloNumeros[i]);
             }
             console.log(maximo);
 
-            for (let i=0; i< arreglo.length; i++ ){
-                for(let j=0; j< arreglo.length; j++){
-                    if(arreglo[j]< arreglo[j+1]){
-
-                        [arreglo[j], arreglo[j+1]]=[arreglo[j], arreglo[j]];
-                         }
-                     }
-                  }
+            for (let i=0; i< arreglo; i++ ){
+                for(let j=0; j< arreglo; j++){
+                    if(j+1 !== arreglo){ 
+                        if(arreglo[j]< arreglo[j+1]){
+                            let resultado = arreglo[j+1];
+                                arreglo[j+1] = arreglo[j];
+                                arreglo[j] = resultado;
+                        } 
+                      }
+                    }
+                }
                 return arreglo;
-             };
+             }
 
-
-
+        
             /* arreglo.push(soloNumeros[i]); }
             console.log(maximo);
 
@@ -54,7 +90,6 @@
             console.log(inicio);*/
            
 
-    
     </script>
 </body>
 </html>
