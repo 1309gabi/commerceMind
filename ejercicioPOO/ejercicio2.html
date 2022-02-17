@@ -11,15 +11,47 @@
     <script>
         var inicio= ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
 
+
         let soloNumeros= inicio.filter((numero) => Number.isInteger(numero));{
             console.log(soloNumeros);
         }
 
-        for (let i=0; i<= soloNumeros.length; i++ ){
-            console.log(i);
-        }
-        
-        soloNumeros.push(soloNumeros<500);
+        function ordenacion (soloNumeros){
+            let arreglo= [];
+            let maximo= soloNumeros[0];
+
+            for (let i=0; i< soloNumeros.length; i++ ){
+                arreglo.push(soloNumeros[i]);
+            }
+            console.log(maximo);
+
+            for (let i=0; i< arreglo.length; i++ ){
+                for(let j=0; j< arreglo.length; j++){
+                    if(arreglo[j]< arreglo[j+1]){
+
+                        [arreglo[j], arreglo[j+1]]=[arreglo[j], arreglo[j]];
+                         }
+                     }
+                  }
+                return arreglo;
+             };
+
+
+
+            /* arreglo.push(soloNumeros[i]); }
+            console.log(maximo);
+
+            let datos = arreglo.length;    
+
+            for (let i=0; i< datos; i++ ){   
+                for(let j=0; j< datos; j++){
+                    if(arreglo[j]< arreglo[j+1]){
+                        let resultado = 
+                        [soloNumeros[j], soloNumeros[j+1]]=[soloNumeros[j+1], soloNumeros[j]];
+                }
+              }
+            }
+            console.log(inicio);*/
            
 
     
