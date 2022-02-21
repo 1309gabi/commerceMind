@@ -1,0 +1,62 @@
+section div{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div{
+    background-color: paleturquoise;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.relativo{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+.absoluto{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.fam{
+    background-color: aquamarine;
+}
+
+.padre{
+    position: relative;
+    top: 20px;
+    padding: 20px;
+}
+
+.hijo{
+    position: relative;
+    border: 2px solid peru;
+    left: 200px;
+}
+
+.fixed{
+    position: fixed;
+    background-color: peru;
+    border: 5px solid burlywood;
+    margin: 20px;
+    bottom: 50px; 
+    width: auto;
+    height: auto;
+    color: blanchedalmond;
+    }
+
+.sticky{
+    position: sticky;
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/23/19/08/background-6650672_960_720.jpg);
+    bottom: 10px;
+    width: auto;
+    border: solid royalblue 5px;
+}    
