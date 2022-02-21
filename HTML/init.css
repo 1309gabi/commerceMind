@@ -17,11 +17,42 @@ li:hover{
 }
 
 .box{
-    width: 350px;
-    height: 150px;
-    margin: 50px 5px 30px 200px;
+    margin: 50px 100px;
     padding: 25px;
     border: 5px solid palevioletred;
     background-image: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);
 }
 
+.seccion div{
+    height: 100px;
+    width: 100px;
+    background: mediumvioletred;
+    border: black 1px solid;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#caja1{
+    width: 100%;
+}
+
+#caja2 {
+    width: 50vw;
+}
+
+#cajacontenedora{
+    width: auto;
+    margin: 0px;
+}
+
+#caja3{
+    width: 80%;
+    height: 65%;
+    background: cornsilk;
+}
+
+#caja4{
+    margin: auto;
+    height: 50%;
+}
