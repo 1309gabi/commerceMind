@@ -51,6 +51,7 @@ div{
     width: auto;
     height: auto;
     color: blanchedalmond;
+    z-index: 3;
     }
 
 .sticky{
