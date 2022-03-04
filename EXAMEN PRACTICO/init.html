@@ -99,7 +99,51 @@ funcionamiento de jerarquía.
 
 */
 
-        class Persona{ }
+let Persona =
+
+        class Persona{
+            constructor(nombre, apellido, edad){
+                this.nombre= "gabriela";
+                this.apellido= "lopez";
+                this.edad= 23;
+                this.metodo1= function getDetalles(){
+                    document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad)
+                }
+class Jugador {}
+class Persona extends Jugador {
+    constructor(posicion) {
+        super(nombre, apellido, edad, posicion);
+         this.posicion = posicion;  } }
+
+class Entrenador {}
+class Persona extends Entrenador {
+    constructor(experiencia, id) {
+        super(nombre, apellido, edad, posicion, experiencia, id);
+            this.experiencia = experiencia;
+            this.id = id;
+            };
+         }
+ }
+
+
+
+get Detalles(){
+    let descripcion = this.nombre + this.apellido + this.edad;
+    console.log(descripcion);    
+ }
+
+         
+
+/*
+const jugador= new Persona();
+    //jugador.nombre(); // posicion
+
+const entrenador= new Persona ();
+    //entrenador.nombre(); //años de experiencia + id de federación
+
+console.log(Persona.nombre);
+*/
+
 
 /////////////////////////////////////////////////////////
 
