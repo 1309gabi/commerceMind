@@ -77,13 +77,21 @@
                 this.metodo1= function getDetalles(){
                     document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad);
                 }
+
+            var persona1= new Persona ("gabriela", "lopez", 23);
+            persona1.metodo1();
+                
 //class Jugador {}
 class Persona extends Jugador {
     constructor(posicion) {
         super(nombre, apellido, edad, posicion);
          this.posicion = posicion;  
-         this.metodo2= document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Posicion: " + this.posicion);
-        } }
+         this.metodo2= function getDetalles(){document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Posicion: " + this.posicion);
+        } } }
+
+        var jugador1= new Jugador ("juanma", "rodriguez", 21, "delantero");
+        jugador1.metodo2();
+
 
 //class Entrenador {}
 class Jugador extends Entrenador {
@@ -91,25 +99,17 @@ class Jugador extends Entrenador {
         super(nombre, apellido, edad, posicion, experiencia, id);
             this.experiencia = experiencia;
             this.id = id;
-            this.metodo2= document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Experiencia: " + this.experiencia + "<br>" + "ID: " + this.id);
+            this.metodo3= function getDetalles(){document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Experiencia: " + this.experiencia + "<br>" + "ID: " + this.id);
             }
          }  
         }  
-    }
+     }  }
 
+var jugadores= [["diego", "enrique", 18, "portero"],["kelvis","espinoza",30,"delantero"],["juanma", "rodriguez", 21, "delantero"]];
+console.log(jugadores);
 
-      
- 
-
-/*
-const jugador= new Persona();
-    //jugador.nombre(); // posicion
-
-const entrenador= new Persona ();
-    //entrenador.nombre(); //años de experiencia + id de federación
-
-console.log(Persona.nombre);
-*/
+    // var entrenador1= new Entrenador ("Enrique", "Natera", 50, "boca", 324);
+     //entrenador1.metodo3();
 
 
 /////////////////////////////////////////////////////////
