@@ -69,29 +69,36 @@
 ////////////////////////////////////////////////////////////////////////////
 
 
-/*
         class Persona{
             constructor(nombre, apellido, edad){
                 this.nombre= "gabriela";
                 this.apellido= "lopez";
                 this.edad= 23;
                 this.metodo1= function getDetalles(){
-                    document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad)
+                    document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad);
                 }
-class Jugador {}
+//class Jugador {}
 class Persona extends Jugador {
     constructor(posicion) {
         super(nombre, apellido, edad, posicion);
-         this.posicion = posicion;  } }
+         this.posicion = posicion;  
+         this.metodo2= document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Posicion: " + this.posicion);
+        } }
 
-class Entrenador {}
-class Persona extends Entrenador {
+//class Entrenador {}
+class Jugador extends Entrenador {
     constructor(experiencia, id) {
         super(nombre, apellido, edad, posicion, experiencia, id);
             this.experiencia = experiencia;
             this.id = id;
-            };
-         }  }  }  
+            this.metodo2= document.write("Nombre: "+ this.nombre + "<br>" + "Apellido: "+ this.apellido + "<br>" + "Edad: "+ this.edad + "Experiencia: " + this.experiencia + "<br>" + "ID: " + this.id);
+            }
+         }  
+        }  
+    }
+
+
+      
  
 
 /*
@@ -109,20 +116,15 @@ console.log(Persona.nombre);
 
 
        var frase= "No soy vago, estoy en modo ahorro de energía";
+var mayusculas = frase.split (",");
+console.log(mayusculas);
 
-var fraseUpp= frase.slice(-31);
-console.log(frase.toUpperCase);
+function soloPrimero (str){
+    return str [0].toUpperCase()+ str.slice(11);
+}
+console.log(soloPrimero(mayusculas));
 
-       for (var i=0; i< frase.length; i++){
-            if (frase.length === ",") {break} 
-            else {continue};
-        }
-
-
-      // console.log(frase.charAt[i].toUpperCase()) ;
-        
-        
-
+//No supe hacerlo con el ciclo recorriendo el string, pero lo intente manualmente
         
 
     </script>
