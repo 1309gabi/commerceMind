@@ -16,9 +16,9 @@
 
         if (numerosAleatorios % 2 == 0)
         {
-            document.write('El numero introducido es par');
+            document.write(numerosAleatorios + ' :El numero introducido es par. ');
         }
-        else {document.write('El numero introducido es impar');}
+        else {document.write(numerosAleatorios + ' :El numero introducido es impar. ');}
             console.log(numerosAleatorios); }
 
 /////////////////////////////////////////////////////////////////////////
@@ -40,10 +40,20 @@
             if(multiplos(i,6))
                 numeroDado.push(i);
              }
-             document.write("Los múltiplos de 3 son: ",numeroDado);
+             console.log("Los múltiplos de 3 son: ",numeroDado);
 
 /////////////////////////////////////////////////////////////////////////
 
+
+        var oracion= "La vida es una historia contada por un idiota, una historia llena de estruendo y      furia, que nada significa - Shakespeare"
+
+        var indice =[];
+        for (var i=0; i< oracion.length; i++){
+            if (oracion[i]. toLowerCase()=== "a") indice.push(i);
+        }
+        console.log("En la oración hay " + indice.length + " letras A");
+
+//////////////////////////////////////////////////////////////////////////
 
 
 
